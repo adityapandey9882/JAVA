@@ -1,9 +1,9 @@
-package Leetcode.Function;
+package Leetcode.DSA_Questions;
 
 import java.util.Scanner;
 
 public class sumofevenoddplace {
-    public static void sumofoddevendigits(int n){
+    public static int sumofoddevendigits(int n){
         int odd = 0;
         int even = 0;
         int ln = 0;
@@ -19,14 +19,14 @@ public class sumofevenoddplace {
             n = n/10;
             count++;   
         }
-        System.out.println("Sum of Even number: " + even);
-        System.out.println("Sum of Odd number: " + odd);
+        System.out.println("sum of digit at even place: " +even);
+        System.out.println("sum of digit at odd place: " +odd);
+    return n;
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter your number: ");
         int n = sc.nextInt();
-        sumofoddevendigits(n);
-        
+        sumofoddevendigits(n);     
     }
 }
