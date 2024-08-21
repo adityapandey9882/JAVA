@@ -1,7 +1,5 @@
 package DSA_by_Java.Array;
 
-import java.util.Scanner;
-
 public class reverseArray {
     public static void reverse(int numbers[]){
         int first = 0;
@@ -19,19 +17,11 @@ public class reverseArray {
         
     }
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        
-        int numbers[] = new int[15];
-        System.out.print("Enter the size of the array: ");
-        int size = sc.nextInt();
-        for(int i=0; i<size; i++){
-            System.out.print("Enter value of array: ");
-            int n = sc.nextInt();
-            numbers[i] = n;
-        }
-        for(int i=0; i<size; i++)
-        System.out.print(numbers[i]+ " ");
+        int [] numbers = {5,4,8,41,2};
         reverse(numbers);
+        for(int i=0; i<numbers.length; i++){
+            System.out.print(numbers[i]+ " ");
+        }
     }
 
 }
