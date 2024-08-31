@@ -1,23 +1,11 @@
 package DSA_by_Java.Array;
 
 public class printsubArray {
-    // public static void subArray(int numbers[]){
-    //     for(int i=0; i<numbers.length; i++){
-    //         for(int j=i; j<numbers.length; j++){
-    //             System.out.print("[");
-    //             for(int k=i; k<=j; k++){
-    //                 System.out.print(numbers[k]+ " ");
-    //             }
-    //             System.out.print("]");
-    //         }
-    //         System.out.println();
-    //     }
-    // }
     public static void subArray(int numbers[]){
         for(int i=0; i<numbers.length; i++){
             for(int j=i; j<numbers.length; j++){
                 System.out.print("[");
-                for(int k=i; k<numbers.length; k++){
+                for(int k=i; k<=j; k++){
                     System.out.print(numbers[k]+ " ");
                 }
                 System.out.print("]");
