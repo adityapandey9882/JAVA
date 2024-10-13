@@ -16,13 +16,13 @@ public class armstrongnum {
     public static boolean  Is_Armstrong_Number(int n){
         int d = Countofdigit(n);
         int sum=0;
-        int p = n;
+        int p = n;  // store the original input number
         while(n > 0){
             int rem = n % 10;
             sum = (int) (sum + Math.pow(rem, d));
             n = n / 10;
         }
-        if(sum==p) {
+        if(sum==p) {  
             return true;
         }
         else{
@@ -31,6 +31,7 @@ public class armstrongnum {
     }
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        System.out.print("Enter you input: ");
         int n = sc.nextInt();
         System.out.println(Is_Armstrong_Number(n));
         
