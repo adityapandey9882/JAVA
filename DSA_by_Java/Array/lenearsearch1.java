@@ -11,6 +11,14 @@ public class lenearsearch1 {
         }
         return -1;
     }
+
+    public static void Display(int []arr){
+        for (int i = 0; i < arr.length; i++) {
+            System.out.print(arr[i]+ " ");
+        }
+        System.out.println();
+    }
+    
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.print("Enter the size of the array: ");
@@ -20,8 +28,11 @@ public class lenearsearch1 {
             System.out.print("Enter the element of the array: ");
             arr[i] = sc.nextInt();
         }
+        Display(arr);
+        
         System.out.print("Enter the search elment: ");
         int key = sc.nextInt();
-        System.out.print(lenearsearch(arr , key));
+        System.out.print(lenearsearch(arr , key));  
     }
+    
 }
