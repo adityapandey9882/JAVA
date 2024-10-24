@@ -1,5 +1,3 @@
-package DSA_by_Java.Array;
-
 import java.util.Scanner;
 
 public class lenearsearch1 {

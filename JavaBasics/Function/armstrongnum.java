@@ -16,7 +16,7 @@ public class armstrongnum {
     public static boolean  Is_Armstrong_Number(int n){
         int d = Countofdigit(n);
         int sum=0;
-        int p = n;  // store the original input number
+        int p = n;  // store the original input number for comparision.
         while(n > 0){
             int rem = n % 10;
             sum = (int) (sum + Math.pow(rem, d));
