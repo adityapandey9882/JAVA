@@ -9,7 +9,6 @@ public class lenearsearch1 {
         }
         return -1;
     }
-
     public static void Display(int []arr){
         for (int i = 0; i < arr.length; i++) {
             System.out.print(arr[i]+ " ");
@@ -23,8 +22,10 @@ public class lenearsearch1 {
         int size = sc.nextInt();
         int []arr = new int[size];
         for (int i = 0; i < size; i++) {
-            System.out.print("Enter the element of the array: ");
+            int count = 0;
+            System.out.print("Enter the element of the array" +  count + ":" );
             arr[i] = sc.nextInt();
+            count++;
         }
         Display(arr);
         
