@@ -1,3 +1,4 @@
+package DSA_by_Java.Sorting;
 import java.util.Scanner;
 
 public class selectionsort {

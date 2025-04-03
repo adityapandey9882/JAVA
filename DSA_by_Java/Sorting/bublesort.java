@@ -1,3 +1,4 @@
+package DSA_by_Java.Sorting;
 public class bublesort {
     public static void bubblesort(int []arr){
         for (int turn = 1; turn < arr.length; turn++) {
